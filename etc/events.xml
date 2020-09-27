@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="checkout_onepage_controller_success_action">
+        <observer name="after_orderplaced" instance="Bhaveshpp\Dev9ts9\Observer\UpdateOrderCbm" />
+    </event>
+    <event name="checkout_cart_update_items_after">
+        <observer name="product_item_update_after" instance="Bhaveshpp\Dev9ts9\Observer\UpdateCbm" />
+    </event>
+    <event name="checkout_cart_product_update_after">
+        <observer name="product_update_after" instance="Bhaveshpp\Dev9ts9\Observer\UpdateCbm" />
+    </event>
+    <event name="checkout_cart_product_add_after">
+        <observer name="product_add_after" instance="Bhaveshpp\Dev9ts9\Observer\UpdateCbm" />
+    </event>
+</config>

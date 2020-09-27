@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- <preference for="Magento\Checkout\Block\Cart\Item\Renderer" type="Bhaveshpp\Dev9ts9\Block\Cart\Item\Renderer" /> -->
+    <type name="Magento\Quote\Model\Quote\Item\ToOrderItem">
+        <plugin name="interceptUpdateProductToCart" type="Bhaveshpp\Dev9ts9\Plugin\UpdateCart"/>
+    </type>
+</config>

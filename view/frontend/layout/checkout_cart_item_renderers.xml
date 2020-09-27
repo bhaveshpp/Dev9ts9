@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="checkout.cart.item.renderers">
+            <block class="Magento\Checkout\Block\Cart\Item\Renderer" name="checkout.cart.item.renderers.default" as="default" template="Magento_Checkout::cart/item/default.phtml">
+                <action method="setTemplate">
+                    <argument name="template" xsi:type="string">Bhaveshpp_Dev9ts9::cart/items/renderer/default.phtml</argument>
+                </action>    
+            </block>
+            <block class="Magento\Checkout\Block\Cart\Item\Renderer" name="checkout.cart.item.renderers.simple" as="simple" template="Magento_Checkout::cart/item/default.phtml">
+                <action method="setTemplate">
+                    <argument name="template" xsi:type="string">Bhaveshpp_Dev9ts9::cart/items/renderer/default.phtml</argument>
+                </action>        
+            </block>
+        </referenceBlock>
+    </body>
+</page>

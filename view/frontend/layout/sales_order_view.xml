@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="order_items">
+            <action method="setTemplate">
+                <argument name="template" xsi:type="string">Bhaveshpp_Dev9ts9::order/items.phtml</argument>
+            </action>
+        </referenceBlock>   
+        <referenceBlock name="order_totals">   
+            <action method="setTemplate">
+                <argument name="template" xsi:type="string">Bhaveshpp_Dev9ts9::order/totals.phtml</argument>
+            </action>
+            <arguments>
+                <argument name="label_properties" xsi:type="string">colspan="5" class="mark"</argument>
+                <argument name="value_properties" xsi:type="string">class="amount"</argument>
+            </arguments>
+        </referenceBlock>   
+        
+    </body>
+</page>
